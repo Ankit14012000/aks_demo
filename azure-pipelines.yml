@@ -19,7 +19,7 @@ variables:
   imagePullSecret: 'ankitacrb3e4-auth'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'ankitpool'
 
 
 stages:
