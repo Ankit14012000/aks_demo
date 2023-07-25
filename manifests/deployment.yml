@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: ankitaksdemo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ankitaksdemo
+  template:
+    metadata:
+      labels:
+        app: ankitaksdemo 
+    spec:
+      containers:
+        - name: ankitaksdemo 
+          image: ankitacr.azurecr.io/ankitaksdemo
+          ports:
+          - containerPort: 80
