@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: sigmoid-ThinkPad-T450
+pool: default
   
 
 steps:
