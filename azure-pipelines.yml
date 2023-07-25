@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: sigmoid-ThinkPad-T450
+  
 
 steps:
 - script: echo Hello, world!
