@@ -14,7 +14,7 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    az login
+    az login --tenant 68b4a7d6-da09-4fc8-abda-2ea25c20f5d0
   displayName: 'login'
 
 
