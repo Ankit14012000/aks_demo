@@ -14,7 +14,7 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    az login -u sachinshadadi@gmail.com -p SAChin@123
+    az login
   displayName: 'login'
 
 
