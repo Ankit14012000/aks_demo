@@ -1,19 +1,21 @@
-apiVersion : apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ankitaksdemo 
+  name: flask
+  labels:
+    app: flask
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ankitaksdemo
+      app: flask
   template:
     metadata:
       labels:
-        app: ankitaksdemo 
+        app: flask
     spec:
       containers:
-        - name: ankitaksdemo 
-          image: ankitacr.azurecr.io/ankitaksdemo
-          ports:
-          - containerPort: 80
+      - name: flask
+        image: ankitacr.azurecr.io/ankitacrimage:latest 
+        ports:
+        - containerPort: 5000
